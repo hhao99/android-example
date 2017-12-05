@@ -13,6 +13,7 @@ class TapCounterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tap_counter)
+
         verticalLayout() {
             val counter = textView("0")
             button("TAP") {
@@ -25,7 +26,9 @@ class TapCounterActivity : AppCompatActivity() {
                     counter.text = "0"
                 }
             }
+
         }
+
 
     }
 
